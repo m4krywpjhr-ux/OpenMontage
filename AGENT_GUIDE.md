@@ -365,6 +365,16 @@ When tools are `UNAVAILABLE` but can be fixed with simple configuration, **offer
 - If the user declines setup, proceed with the best available path — no nagging
 - Group related fixes (tools sharing the same env var dependency)
 
+### Provider Fallback Ladder (Approved at Proposal)
+
+Fallback is a **declared ladder**, not a silent substitution. Tools declare their alternatives in `fallback` and `fallback_tools`, but nothing in Python switches providers for you: the agent does, following this protocol.
+
+1. **Propose the ladder with the cost plan.** For each capability the pipeline needs, list the ordered providers the user has keys for, cheapest or free first. Example: `elevenlabs_tts` → `openai_tts` → `piper_tts`. The user approves the ladder once, at proposal.
+2. **Switch only on an availability failure.** Move to the next rung when the current provider fails with insufficient credits, quota exhaustion, or rate limits that persist after one retry. Do not switch because the output looks worse; that is a quality decision and still requires asking the user.
+3. **Stay inside the approved ladder.** Never reach a provider the user did not approve, and never a paid provider the user has no key for.
+4. **Announce and log the switch.** Tell the user which provider failed, which one replaced it, and why. Append a new `decision_log` entry with the same `category` and `subject` as the original choice, per Re-log Changed Decisions.
+5. **Stop when the ladder is exhausted.** Escalate as a blocker with the remaining options. Do not invent a provider or fabricate output.
+
 ### Composition Runtimes (Inside video_compose)
 
 `video_compose` has **three** render engines / runtimes. They are parallel, not ranked — the choice is made at proposal and locked in `edit_decisions.render_runtime`. Check which are available:
