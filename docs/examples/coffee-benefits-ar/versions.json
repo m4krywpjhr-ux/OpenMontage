@@ -1,0 +1,29 @@
+[
+  {
+    "name": "v1-informative",
+    "style": "Informative top-5 list, calm male Saudi voice, bold white subtitles",
+    "voice": "ar-SA-HamedNeural-Male",
+    "font": "Tajawal-Bold.ttf",
+    "extra_args": ["--text-fore-color", "#FFFFFF", "--stroke-width", "2", "--subtitle-position", "two_thirds_bottom", "--video-transition-mode", "fade-in"],
+    "terms": "coffee cup,coffee beans,barista pouring coffee,working on laptop with coffee,running workout,coffee roasting",
+    "script": "هل تعلم أن فنجان قهوتك الصباحي يحمل فوائد أكثر مما تتخيل؟ أولاً، القهوة تحسّن التركيز واليقظة، لأن الكافيين يُبعد الشعور بالنعاس ويُنشّط الدماغ. ثانياً، تمنحك طاقة إضافية قبل التمرين، وقد تحسّن أداءك البدني. ثالثاً، القهوة من أغنى مصادر مضادات الأكسدة في نظامنا الغذائي. رابعاً، ربطت دراسات عديدة شرب القهوة باعتدال بانخفاض خطر الإصابة بالسكري من النوع الثاني. وخامساً، قد تساعد في حماية الكبد. لكن تذكّر: الاعتدال هو السر، فثلاثة إلى أربعة فناجين يومياً تكفي معظم البالغين. فكم فنجاناً شربت اليوم؟"
+  },
+  {
+    "name": "v2-energetic",
+    "style": "Fast hook-driven short, energetic female Egyptian voice, yellow subtitles",
+    "voice": "ar-EG-SalmaNeural-Female",
+    "font": "Changa.ttf",
+    "extra_args": ["--text-fore-color", "#FFD23F", "--stroke-width", "3", "--subtitle-position", "center", "--voice-rate", "1.1", "--video-clip-duration", "3", "--video-transition-mode", "zoom-in"],
+    "terms": "espresso shot,coffee splash,happy woman drinking coffee,gym workout,coffee shop friends,latte art",
+    "script": "توقّف! لا تشرب قهوتك قبل أن تعرف هذا. القهوة ليست مجرد مشروب، إنها وقود لعقلك. فنجان واحد يرفع تركيزك ويحسّن مزاجك خلال دقائق. تريد أداءً أفضل في الرياضة؟ الكافيين يزيد قدرتك على التحمّل. والقهوة غنية بمضادات الأكسدة التي تساعد جسمك على مقاومة الالتهابات. والأجمل؟ من يشربون القهوة باعتدال أقل عرضة لبعض الأمراض المزمنة. نصيحة ذهبية: قلّل السكر، ولا تشربها قبل النوم مباشرة. شارك هذا الفيديو مع صديق لا يبدأ يومه إلا بالقهوة!"
+  },
+  {
+    "name": "v3-storytelling",
+    "style": "Slow cinematic storytelling, warm female Saudi voice, subtitles on a dark rounded box",
+    "voice": "ar-SA-ZariyahNeural-Female",
+    "font": "NotoNaskhArabic.ttf",
+    "extra_args": ["--subtitle-background-enabled", "--rounded-subtitle-background", "--subtitle-background-color", "#2B1A10", "--subtitle-position", "bottom", "--voice-rate", "0.95", "--video-clip-duration", "5", "--video-transition-mode", "fade-in"],
+    "terms": "morning coffee window,arabic coffee dallah,coffee beans close up,pouring coffee slow motion,steam from coffee cup,friends sharing coffee",
+    "script": "في كل صباح، تبدأ رحلة صغيرة، من حبّة بُنّ إلى فنجان دافئ بين يديك. لكن هذا الفنجان يخفي أسراراً جميلة. فهو يوقظ عقلك بلطف، ويمنحك صفاءً وتركيزاً لساعات. ويحمل مضادات أكسدة تحمي خلايا جسمك. وتشير الأبحاث إلى أن القهوة المعتدلة قد تفيد القلب والكبد، وترتبط بمزاج أفضل. والقهوة عند العرب ليست مجرد مشروب، بل كرمٌ وضيافة وحديثٌ يجمع الأحبة. فاستمتع بفنجانك، واجعله لحظة هدوء في يومك."
+  }
+]
